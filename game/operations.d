@@ -1,0 +1,9 @@
+.\operations.o: src\operations.c
+.\operations.o: src\..\./headers/screens.h
+.\operations.o: src\..\./headers/operations.h
+.\operations.o: src\..\./headers/timers.h
+.\operations.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\operations.o: src\..\./headers/UART.h
+.\operations.o: src\..\./headers/leds.h
+.\operations.o: src\..\./headers/xo.h
+.\operations.o: src\..\./headers/Nokia5110.h

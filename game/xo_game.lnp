@@ -1,0 +1,17 @@
+--cpu Cortex-M4
+".\startup.o"
+".\leds.o"
+".\nokia5110.o"
+".\operations.o"
+".\ports.o"
+".\screens.o"
+".\texas.o"
+".\timers.o"
+".\xo.o"
+".\uart.o"
+".\ports_cfg.o"
+".\timer_cfg.o"
+C:\Keil\ARM\RV31\LIB\RTX_CM3.LIB
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\xo_game.map" -o .\xo_game.axf

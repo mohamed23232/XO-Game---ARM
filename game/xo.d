@@ -1,0 +1,12 @@
+.\xo.o: xo.c
+.\xo.o: ./headers/Nokia5110.h
+.\xo.o: ./headers/TExaS.h
+.\xo.o: ./headers/timers.h
+.\xo.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\xo.o: ./headers/ports.h
+.\xo.o: ./headers/Ports_cfg.h
+.\xo.o: ./headers/screens.h
+.\xo.o: ./headers/operations.h
+.\xo.o: ./headers/leds.h
+.\xo.o: ./headers/xo.h
+.\xo.o: ./headers/UART.h

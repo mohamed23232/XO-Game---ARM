@@ -1,0 +1,10 @@
+.\leds.o: src\leds.c
+.\leds.o: src\..\./headers/tm4c123gh6pm.h
+.\leds.o: src\..\./headers/Nokia5110.h
+.\leds.o: src\..\./headers/TExaS.h
+.\leds.o: src\..\./headers/leds.h
+.\leds.o: src\..\./headers/timers.h
+.\leds.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\leds.o: src\..\\./headers/xo.h
+.\leds.o: src\..\\./headers/operations.h
+.\leds.o: src\..\\./headers/screens.h

@@ -1,0 +1,82 @@
+Dependencies for Project 'xo_game', Target 'xo_game': (DO NOT MODIFY !)
+F (.\src\startup.s)(0x64686693)(--cpu Cortex-M4 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\src\leds.c)(0x6647DA52)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\leds.o --omf_browse .\leds.crf --depend .\leds.d)
+I (src\..\./headers/tm4c123gh6pm.h)(0x64686693)
+I (src\..\./headers/Nokia5110.h)(0x64686693)
+I (src\..\./headers/TExaS.h)(0x64686693)
+I (src\..\./headers/leds.h)(0x663C074B)
+I (src\..\./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (src\..\\./headers/xo.h)(0x64686693)
+I (src\..\\./headers/operations.h)(0x6647DA02)
+I (src\..\\./headers/screens.h)(0x663C15FA)
+F (.\src\Nokia5110.c)(0x64686693)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (src\..\\./headers/Nokia5110.h)(0x64686693)
+F (.\src\operations.c)(0x6647D582)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\operations.o --omf_browse .\operations.crf --depend .\operations.d)
+I (src\..\./headers/screens.h)(0x663C15FA)
+I (src\..\./headers/operations.h)(0x6647DA02)
+I (src\..\./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (src\..\./headers/UART.h)(0x54A104CE)
+I (src\..\./headers/leds.h)(0x663C074B)
+I (src\..\./headers/xo.h)(0x64686693)
+I (src\..\./headers/Nokia5110.h)(0x64686693)
+F (.\src\ports.c)(0x6647DC5D)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\ports.o --omf_browse .\ports.crf --depend .\ports.d)
+I (src\..\./headers/tm4c123gh6pm.h)(0x64686693)
+I (src\..\./headers/ports.h)(0x6647DD9B)
+I (src\..\./headers/Ports_cfg.h)(0x6647DAD2)
+F (.\src\screens.c)(0x6647DB97)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\screens.o --omf_browse .\screens.crf --depend .\screens.d)
+I (src\..\./headers/tm4c123gh6pm.h)(0x64686693)
+I (src\..\./headers/Nokia5110.h)(0x64686693)
+I (src\..\./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (src\..\./headers/shapes.h)(0x6647DACB)
+I (src\..\./headers/leds.h)(0x663C074B)
+I (src\..\./headers/screens.h)(0x663C15FA)
+F (.\src\TExaS.c)(0x64686693)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\texas.o --omf_browse .\texas.crf --depend .\texas.d)
+I (src\..\\./headers/TExaS.h)(0x64686693)
+F (.\src\timers.c)(0x6647D9AA)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\timers.o --omf_browse .\timers.crf --depend .\timers.d)
+I (src\..\\./headers/tm4c123gh6pm.h)(0x64686693)
+I (src\..\\./headers/Nokia5110.h)(0x64686693)
+I (src\..\\./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (src\..\\./headers/xo.h)(0x64686693)
+F (.\xo.c)(0x6647DD46)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\xo.o --omf_browse .\xo.crf --depend .\xo.d)
+I (./headers/Nokia5110.h)(0x64686693)
+I (./headers/TExaS.h)(0x64686693)
+I (./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (./headers/ports.h)(0x6647DD9B)
+I (./headers/Ports_cfg.h)(0x6647DAD2)
+I (./headers/screens.h)(0x663C15FA)
+I (./headers/operations.h)(0x6647DA02)
+I (./headers/leds.h)(0x663C074B)
+I (./headers/xo.h)(0x64686693)
+I (./headers/UART.h)(0x54A104CE)
+F (.\src\UART.c)(0x663BF9FF)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (src\..\./headers/tm4c123gh6pm.h)(0x64686693)
+I (src\..\./headers/UART.h)(0x54A104CE)
+I (src\..\\./headers/xo.h)(0x64686693)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C819B4)
+F (.\headers\ports_cfg.c)(0x6647DB08)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\ports_cfg.o --omf_browse .\ports_cfg.crf --depend .\ports_cfg.d)
+I (headers\ports.h)(0x6647DD9B)
+I (headers\Ports_cfg.h)(0x6647DAD2)
+F (.\headers\ports_cfg.h)(0x6647DAD2)()
+F (.\headers\leds.h)(0x663C074B)()
+F (.\headers\Nokia5110.h)(0x64686693)()
+F (.\headers\operations.h)(0x6647DA02)()
+F (.\headers\ports.h)(0x6647DD9B)()
+F (.\headers\screens.h)(0x663C15FA)()
+F (.\headers\shapes.h)(0x6647DACB)()
+F (.\headers\TExaS.h)(0x64686693)()
+F (.\headers\timers.h)(0x6647D9D6)()
+F (.\headers\tm4c123gh6pm.h)(0x64686693)()
+F (.\headers\xo.h)(0x64686693)()
+F (.\headers\Types.h)(0x00000000)()
+F (.\common\BIT_MATH.h)(0x00000000)()
+F (.\common\GameArt.h)(0x00000000)()
+F (.\common\XO Game.h)(0x00000000)()
+F (.\headers\UART.h)(0x54A104CE)()
+F (.\src\timer_cfg.c)(0x6647DB35)(--c99 -c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1231C3PM-o .\timer_cfg.o --omf_browse .\timer_cfg.crf --depend .\timer_cfg.d)
+I (src\..\\./headers/timers.h)(0x6647D9D6)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C819B4)
