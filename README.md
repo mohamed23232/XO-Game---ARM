@@ -41,7 +41,7 @@ X-O Game using ARM Cortex M4 Tiva C kit
 2.SW2 (Move) connected to PB0
 
 
-# Designed by
+# Designed by:
 Mohamed Rabea
 
 Afaf Rafat
