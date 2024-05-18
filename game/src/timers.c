@@ -34,14 +34,14 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             TIMER0_ICR_R = 0x00000001;  
             TIMER0_IMR_R = 0x00000001;  
             // Setting the interrupt priority to 4 (lower than default)
-            NVIC_PRI5_R = (NVIC_PRI5_R & 0x00FFFFFF) | 0x80000000; 
+            NVIC_PRI4_R = (NVIC_PRI4_R & 0x00FFFFFF) | 0x80000000; 
             // Enabling the interrupt in the NVIC (IRQ 19 for Timer 0A)
             NVIC_EN0_R = 1 << 19;    
             // Enabling Timer 0
             TIMER0_CTL_R = (1 << config->Set);    		
             break;
         case 1:
-            TIMER1_CTL_R |= (1 << config->Clear);  // disable timer
+            TIMER1_CTL_R = (1 << config->Clear);  // disable timer
             TIMER1_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER1_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 1 to the given period - 1
@@ -59,7 +59,7 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             TIMER1_CTL_R = (1 << config->Set);    
             break;
         case 2:
-            TIMER2_CTL_R |= (1 << config->Clear);  // disable timer
+            TIMER2_CTL_R = (1 << config->Clear);  // disable timer
             TIMER2_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER2_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 2 to the given period - 1
