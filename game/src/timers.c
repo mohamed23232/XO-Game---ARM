@@ -23,7 +23,7 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
     switch(TimerNum)
     {
         case 0:
-            TIMER0_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER0_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER0_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 0 to the given period - 1
@@ -38,10 +38,10 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 19 for Timer 0A)
             NVIC_EN0_R = 1 << 19;    
             // Enabling Timer 0
-            TIMER0_CTL_R = (1 << config->Set);    		
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
         case 1:
-            TIMER1_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER1_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER1_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 1 to the given period - 1
@@ -56,10 +56,10 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 21 for Timer 1A)
             NVIC_EN0_R = 1 << 21;    
             // Enabling Timer 1
-            TIMER1_CTL_R = (1 << config->Set);    
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
         case 2:
-            TIMER2_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER2_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER2_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 2 to the given period - 1
@@ -74,10 +74,10 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 23 for Timer 2A)
             NVIC_EN0_R = 1 << 23;    
             // Enabling Timer 2
-            TIMER2_CTL_R |= (1 << config->Set);    
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
         case 3:
-            TIMER3_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER3_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER3_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 3 to the given period - 1
@@ -92,10 +92,10 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 35 for Timer 3A)
             NVIC_EN1_R = 1 << 3;    
             // Enabling Timer 3
-            TIMER3_CTL_R = (1 << config->Set);    
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
         case 4:
-            TIMER4_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER4_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER4_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 4 to the given period - 1
@@ -110,10 +110,10 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 70 for Timer 4A)
             NVIC_EN2_R = 1 << 6;    
             // Enabling Timer 4
-            TIMER4_CTL_R = (1 << config->Set);    
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
         case 5:
-            TIMER5_CTL_R = (1 << config->Clear);  // disable timer
+            TIMER0_CTL_R &= ~(1 << config->Clear);  // disable timer
             TIMER5_CFG_R |= config->Configuration;  // setting configuration to 32bit
             TIMER5_TAMR_R |= (1 << config->TimerType); // setting the timer to be periodic
             // Setting the load value for Timer 5 to the given period - 1
@@ -128,7 +128,7 @@ TIMER_Ret_t TIMER_Init(Timer_config_t *config, Timer_t TimerNum, unsigned long p
             // Enabling the interrupt in the NVIC (IRQ 92 for Timer 5A)
             NVIC_EN2_R = 1 << 28;    
             // Enabling Timer 5
-            TIMER5_CTL_R = (1 << config->Set);    
+            TIMER0_CTL_R = (1 << config->Clear);    		
             break;
     }  
     return TIMER_RET_OK;
